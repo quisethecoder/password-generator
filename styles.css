@@ -12,6 +12,12 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: rgb(26, 104, 43);
+    background: rgb(107, 96, 0);
+}
+
+.container{
+    width: 450px;
+    background: rgb(255, 255, 255);
+    border-radius: 8px;
 }
 
