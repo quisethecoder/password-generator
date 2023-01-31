@@ -12,12 +12,12 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: rgb(107, 96, 0);
+    background: rgb(27, 16, 126);
 }
 
 .container{
     width: 450px;
-    background: rgb(255, 255, 255);
+    background: rgb(240, 240, 255);
     border-radius: 8px;
 }
 
@@ -51,6 +51,46 @@ body{
 .input-box span{
     position: absolute;
     right: 13px;
+    cursor: pointer;
     line-height: 53px;
     color: #707070;
+}
+
+.wrapper .pass-indicator{
+    width: 100px;
+    height: 4px;
+    position: relative;
+    background: #dfdfdf;
+    margin-top: 0.75rem;
+    border-radius: 25px;
+}
+
+.pass-indicator::before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 50%;
+    border-radius: inherit;
+    background: #f1c80b;
+}
+
+.wrapper .pass-length{
+    margin: 1.56rem 0 1.25rem;
+}
+
+.pass-length .detail{
+    display: flex;
+    justify-content: space-between;
+}
+
+.pass-length input{
+    width: 100%;
+    height: 5px;
+}
+
+.pass-settings .options{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    margin-top: 1rem;
 }
