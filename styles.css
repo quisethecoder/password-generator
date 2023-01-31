@@ -113,3 +113,16 @@ body{
     padding-left: 0.63rem;
 }
 
+.wrapper .generate-btn{
+    width: 100%;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: rgb(27, 16, 126);
+    font-size: 1.06rem;
+    padding: 0.94rem 0;
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin: 00.94rem 0 1.3rem;
+}
