@@ -10,4 +10,5 @@ There is also a password strength indicator that informs the strength of the use
 
 Technolgies Used: HTML, CSS, JavaScript
 
+
 ![Screen Shot 2023-02-01 at 11 29 59 PM](https://user-images.githubusercontent.com/97071278/216231982-675ae301-0f8b-4d42-8de0-93da3378e266.png)
