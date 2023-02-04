@@ -30,7 +30,7 @@ const generatePassword = () => {
     for(let i = 0; i < passLength; i++){
        let randomChar = randomPassword += staticPassword[Math.floor(Math.random() * staticPassword.length)];
         if(excludeDuplicate) {
-            !randomPassword.includes(randomChar) || randomPassword == " " ? randomPassword += randomChar : i--;
+            !randomPassword.includes(randomChar) || randomChar == " " ? randomPassword += randomChar : i--;
         } else {
             randomPassword += randomChar;
         }
