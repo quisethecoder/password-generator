@@ -1,5 +1,3 @@
-# password-generator
-
 # Password Generator
 
 I AM CURRENTLY WORKING ON THIS PROJECT!
