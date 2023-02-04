@@ -2,7 +2,7 @@
 
 # Password Generator
 
-I AM CURRENTLY WORKING ON THIS PROJECT. THERE IS NO JAVASCRIPT ADDED YET!
+I AM CURRENTLY WORKING ON THIS PROJECT!
 
 
 Summary: Users can generate random passwords by customizing their preferred settings such as lowercase, uppercase, number, etc. 
