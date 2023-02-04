@@ -20,7 +20,7 @@ const generatePassword = () => {
             if(option.id !== "exc-duplicate" && option.id !== "spaces"){
                 staticPassword += characters[option.id];
             }else if(option.id === "spaces") { 
-                staticPassword += `${staticPassword}`;
+                staticPassword += ` ${staticPassword} `;
             } else{
                 excludeDuplicate = true;
             }
@@ -28,7 +28,12 @@ const generatePassword = () => {
     });
 
     for(let i = 0; i < passLength; i++){
-        randomPassword += staticPassword[Math.floor(Math.random() * staticPassword.length)];
+       let randomChar = randomPassword += staticPassword[Math.floor(Math.random() * staticPassword.length)];
+        if(excludeDuplicate) {
+            !randomPassword.includes(randomChar) || randomPassword == " " ? randomPassword += randomChar : i--;
+        } else {
+            randomPassword += randomChar;
+        }
     }
 
     console.log(randomPassword)
