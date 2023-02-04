@@ -1,5 +1,6 @@
 const lengthSlider = document.querySelector(".pass-length input"),
 options = document.querySelectorAll(".option input"),
+passwordInput = document.querySelector(".input-box input"),
 generateBtn = document.querySelector(".generate-btn");
 
 const characters = {
@@ -36,11 +37,12 @@ const generatePassword = () => {
         }
     }
 
-    console.log(randomPassword)
+    passwordInput.value = randomPassword;
 }
 
 const updateSlider = () => {
     document.querySelector(".pass-length span").innerText = lengthSlider.value;
+    generatePassword();
 }
 
 lengthSlider.addEventListener("input", updateSlider);
