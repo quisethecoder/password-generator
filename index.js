@@ -1,7 +1,7 @@
 const lengthSlider = document.querySelector(".pass-length input"),
 options = document.querySelectorAll(".option input"),
 passwordInput = document.querySelector(".input-box input"),
-passIndicator = document.querySelector("pass-indicator"),
+passIndicator = document.querySelector(".pass-indicator"),
 generateBtn = document.querySelector(".generate-btn");
 
 const characters = {
