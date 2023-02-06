@@ -79,7 +79,7 @@ body{
     margin: 1.56rem 0 1.25rem;
 }
 
-.pass-length .detail{
+.pass-length .details{
     display: flex;
     justify-content: space-between;
 }
