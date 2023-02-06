@@ -41,14 +41,9 @@ const generatePassword = () => {
     passwordInput.value = randomPassword;
 }
 
+// fix below
 const updatePassIndicator = () => {
-    if (lengthSlider.value <= 8){
-        passIndicator.id = "weak";
-    }else if (lengthSlider <= 12){
-        passIndicator = "medium"
-    }else{
-        passIndicator.id = "strong"
-    }
+    passIndicator.id = lengthSlider.value <= 8 ? "weak" : lengthSlider.value <= 16 ? "medium" : "strong";
 }
 
 const updateSlider = () => {
@@ -56,6 +51,7 @@ const updateSlider = () => {
     generatePassword();
     updatePassIndicator();
 }
+
 
 lengthSlider.addEventListener("input", updateSlider);
 generateBtn.addEventListener("click", generatePassword);
